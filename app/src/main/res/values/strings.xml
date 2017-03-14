@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TB17app</string>
+
+    <!--Facebook APP ID -->
+    <string name="facebook_app_id">1788436258143629</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="cancel_login">Cancel login</string>
+    <string name="error_login">Error login</string>
+    <string name="logout">Logout</string>
+</resources>

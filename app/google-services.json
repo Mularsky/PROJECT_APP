@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "102505143398",
+    "project_id": "tb17app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102505143398:android:1104ba4ed60af0b9",
+        "android_client_info": {
+          "package_name": "com.example.drs.tb17app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102505143398-onq8g22mo7odv17u4lq4q6cirlstpked.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drs.tb17app",
+            "certificate_hash": "21965cc0b3136fabb4648e18dc9b767a4b02c709"
+          }
+        },
+        {
+          "client_id": "102505143398-e2m63b9hcfeeqvqabr5gm7i09v2ef06j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFFBBtrz_wskHiz3yrgr2rmPjs2wG_ov0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
