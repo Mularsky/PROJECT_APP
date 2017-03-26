@@ -9,6 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.drs.tb17app.LoginActivity">
 
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
     <LinearLayout
         android:id="@+id/email_login_form"
         android:layout_width="match_parent"
@@ -16,7 +24,7 @@
         android:orientation="vertical">
 
         <com.facebook.login.widget.LoginButton
-            android:id="@+id/loginButton"
+            android:id="@+id/facebook_sign_in_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -24,10 +32,9 @@
             android:layout_gravity="center_horizontal" />
 
         <com.google.android.gms.common.SignInButton
-            android:id="@+id/signInButton"
+            android:id="@+id/google_sign_in_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
 
     </LinearLayout>
 

@@ -10,6 +10,7 @@ import com.facebook.FacebookSdk;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+
 public class MyApplication extends Application {
 
     @Override
