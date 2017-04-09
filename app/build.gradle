@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.example.drs.tb17app"
@@ -32,5 +32,8 @@ dependencies {
     compile 'com.google.android.gms:play-services-auth:9.2.1'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.google.android.gms:play-services-appindexing:9.2.1'
+    compile 'com.google.firebase:firebase-auth:9.2.1'
+    compile 'com.google.firebase:firebase-database:9.2.1'
+    compile 'com.google.firebase:firebase-core:9.2.1'
 }
 apply plugin: 'com.google.gms.google-services'

@@ -1,6 +1,9 @@
 package com.example.drs.tb17app;
 
+import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -64,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //FacebookSdk.sdkInitialize(getApplicationContext());
+        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_login);
 
         if(PrefUtils.getCurrentUser(LoginActivity.this) != null){
@@ -94,6 +97,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public FacebookCallback<LoginResult> mCallBack = new FacebookCallback<LoginResult>() {
+
         @Override
         public void onSuccess(LoginResult loginResult) {
 
@@ -116,7 +120,6 @@ public class LoginActivity extends AppCompatActivity {
                                 user.setEmail(email);
 
                                 PrefUtils.setCurrentUser(user,LoginActivity.this);
-                                Toast.makeText(getApplicationContext(), "Name " + user.getUsername(), Toast.LENGTH_LONG).show();
 
                             }catch (Exception e){
                                 e.printStackTrace();
@@ -162,7 +165,6 @@ public class LoginActivity extends AppCompatActivity {
             user.setEmail(email);
 
             if (result.isSuccess()) {
-                //final GoogleApiClient client = mGoogleApiClient;
                 PrefUtils.setCurrentUser(user,LoginActivity.this);
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);

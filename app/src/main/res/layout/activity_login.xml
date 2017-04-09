@@ -9,13 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.drs.tb17app.LoginActivity">
 
-    <ProgressBar
+    <!--<ProgressBar
         android:id="@+id/login_progress"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:visibility="gone" />
+        android:visibility="gone" />-->
 
     <LinearLayout
         android:id="@+id/email_login_form"
